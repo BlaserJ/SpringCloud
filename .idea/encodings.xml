@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding" native2AsciiForPropertiesFiles="true" defaultCharsetForPropertiesFiles="UTF-8">
+    <file url="file://$PROJECT_DIR$/Api-Commons/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Api-Commons/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Consumer-Feign-Hystrix-Order-80/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Consumer-Feign-Hystrix-Order-80/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Consumer-Feign-Order-80/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Consumer-Feign-Order-80/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Consumer-Order-80/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Consumer-Order-80/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Eureka-Server-7001/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Eureka-Server-7001/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Eureka-Server-7002/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Eureka-Server-7002/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Provider-Hystrix-Payment-8003/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Provider-Hystrix-Payment-8003/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Provider-Payment-8001/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Provider-Payment-8001/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Provider-Payment-8002/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Provider-Payment-8002/src/main/resources" charset="UTF-8" />
+    <file url="PROJECT" charset="UTF-8" />
+  </component>
+</project>

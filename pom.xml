@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <!--pom项目坐标-->
+  <groupId>com.blaser</groupId>
+  <artifactId>SpringCloud</artifactId>
+  <version>1.0-SNAPSHOT</version>
+  <!--子模块列表-->
+  <modules>
+    <module>Provider-Payment-8001</module>
+    <module>Consumer-Order-80</module>
+    <module>Api-Commons</module>
+    <module>Eureka-Server-7001</module>
+    <module>Eureka-Server-7002</module>
+    <module>Provider-Payment-8002</module>
+      <module>Consumer-Feign-Order-80</module>
+      <module>Provider-Hystrix-Payment-8003</module>
+      <module>Consumer-Feign-Hystrix-Order-80</module>
+  </modules>
+  <packaging>pom</packaging>
+
+  <!--项目信息-->
+  <name>Maven</name>
+  <!-- FIXME change it to the project's website -->
+  <url>http://maven.apache.org/</url>
+  <inceptionYear>2001</inceptionYear>
+
+  <!--统一jar包版本管理-->
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <maven.compiler.source>11</maven.compiler.source>
+    <maven.compiler.target>11</maven.compiler.target>
+    <junit.version>4.12</junit.version>
+    <log4j.version>1.2.17</log4j.version>
+    <lombok.version>1.18.10</lombok.version>
+    <mysql.version>8.0.28</mysql.version>
+    <druid.version>1.2.8</druid.version>
+    <mybatis-plus.boot.version>3.5.1</mybatis-plus.boot.version>
+    <slf4j.version>1.7.36</slf4j.version>
+  </properties>
+
+  <!--锁定的子模块依赖-->
+  <dependencyManagement>
+    <dependencies>
+
+      <!--spring-boot 2.2.2-RELEASE-->
+      <dependency>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-dependencies</artifactId>
+        <version>2.2.2.RELEASE</version>
+        <type>pom</type>
+        <scope>import</scope>
+      </dependency>
+
+      <!--spring-cloud Hoxton.SR1-->
+      <dependency>
+        <groupId>org.springframework.cloud</groupId>
+        <artifactId>spring-cloud-dependencies</artifactId>
+        <version>Hoxton.SR1</version>
+        <type>pom</type>
+        <scope>import</scope>
+      </dependency>
+
+      <!--spring-cloud alibaba 2.1.0.RELEASE-->
+      <dependency>
+        <groupId>com.alibaba.cloud</groupId>
+        <artifactId>spring-cloud-alibaba</artifactId>
+        <version>2.1.0.RELEASE</version>
+        <type>pom</type>
+        <scope>import</scope>
+      </dependency>
+
+      <!--mysql-->
+      <dependency>
+        <groupId>mysql</groupId>
+        <artifactId>mysql-connector-java</artifactId>
+        <version>${mysql.version}</version>
+      </dependency>
+
+      <!--druid-->
+      <dependency>
+        <groupId>com.alibaba</groupId>
+        <artifactId>druid</artifactId>
+        <version>${druid.version}</version>
+      </dependency>
+
+      <!--mybatis-plus-->
+      <dependency>
+        <groupId>com.baomidou</groupId>
+        <artifactId>mybatis-plus-boot-starter</artifactId>
+        <version>${mybatis-plus.boot.version}</version>
+      </dependency>
+
+    </dependencies>
+  </dependencyManagement>
+
+  <!--插件-->
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-maven-plugin</artifactId>
+        <configuration>
+          <fork>true</fork>
+          <addResources>true</addResources>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+
+</project>

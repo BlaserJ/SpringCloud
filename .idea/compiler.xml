@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="Provider-Payment-8002" />
+        <module name="Consumer-Feign-Order-80" />
+        <module name="Eureka-Server-7002" />
+        <module name="Eureka-Server-7001" />
+        <module name="Provider-Payment-8001" />
+        <module name="Consumer-Feign-Hystrix-Order-80" />
+        <module name="Provider-Hystrix-Payment-8003" />
+        <module name="Consumer-Order-80" />
+        <module name="Api-Commons" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="eureka-server-1" target="11" />
+      <module name="Eureka-Server-2" target="11" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="eureka-server-1" options="-parameters" />
+    </option>
+  </component>
+</project>
