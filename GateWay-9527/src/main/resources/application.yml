@@ -1,0 +1,53 @@
+server:
+  port: 9527
+
+spring:
+  application:
+    name: Gateway
+  cloud:
+
+    #gateway自带了BlockingLoadBalancerClient，因此把ribbon中的loadbalancer关闭掉
+    loadbalancer:
+      ribbon:
+        enabled: false
+
+    #在此处配置gateway网关的相关配置信息
+    gateway:
+      discovery:
+        locator:
+          enabled: true           #此配置能够让网关从注册中心发现服务
+
+      #配置网关可以将请求路由到的目的地
+      routes:
+        - id: payment8001_routh1     #为该路由起名，要求不重复
+          #uri: http://localhost:8001   #匹配后提供服务的实际路由地址
+          uri: lb://Provider-Payment-Service   #gateway更改为从注册中心发现服务后，需要将uri改为此格式 lb代表load balance
+          predicates:
+            - Path=/pay/get/**      #断言，即gateway会判断，路径符合此断言的请求将被放行
+
+        - id: payment8001_routh2     #为该路由起名，要求不重复
+          #uri: http://localhost:8001   #匹配后提供服务的实际路由地址
+          uri: lb://Provider-Payment-Service   #gateway更改为从注册中心发现服务后，需要将uri改为此格式
+          predicates:
+            - Path=/pay/port/**      #断言，即gateway会判断，路径符合此断言的请求将被放行
+            - After=2022-03-25T17:00:00.000000000+08:00[Asia/Shanghai]   #断言，即gateway会判断，请求时间不早于指定时间的请求将被放行
+            #- Cookie=Blaser
+            #还支持的断言类型：
+            #Before: 要求请求发送于指定时间之前
+            #Between: 要求请求发送于指定时间段
+            #Cookie: 要求请求发送时携带指定name的Cookie，且值需要符合正则表达式
+            #Header: 要求请求发送时携带符合指定正则的请求头
+            #Host: 要求请求从指定主机上发送
+            #Method: 要求请求必须是指定的方法（如GET、POST等）
+            #Query: 要求请求发送时携带指定的查询条件
+
+eureka:
+  instance:
+    hostname:
+      Gateway-Service
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone:
+        http://eureka1.com:7001/eureka/

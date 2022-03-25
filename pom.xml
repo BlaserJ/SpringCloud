@@ -19,6 +19,8 @@
       <module>Consumer-Feign-Order-80</module>
       <module>Provider-Hystrix-Payment-8003</module>
       <module>Consumer-Feign-Hystrix-Order-80</module>
+    <module>Consumer-Hystrix-DashBoard-9001</module>
+    <module>GateWay-9527</module>
   </modules>
   <packaging>pom</packaging>
 
@@ -35,7 +37,7 @@
     <maven.compiler.target>11</maven.compiler.target>
     <junit.version>4.12</junit.version>
     <log4j.version>1.2.17</log4j.version>
-    <lombok.version>1.18.10</lombok.version>
+    <lombok.version>1.18.22</lombok.version>
     <mysql.version>8.0.28</mysql.version>
     <druid.version>1.2.8</druid.version>
     <mybatis-plus.boot.version>3.5.1</mybatis-plus.boot.version>

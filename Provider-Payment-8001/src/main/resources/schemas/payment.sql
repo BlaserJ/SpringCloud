@@ -1,3 +1,5 @@
+USE database1;
+
 DROP TABLE IF EXISTS payment;
 
 CREATE TABLE payment (

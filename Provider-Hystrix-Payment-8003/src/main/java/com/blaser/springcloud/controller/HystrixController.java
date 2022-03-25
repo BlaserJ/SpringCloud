@@ -2,6 +2,7 @@ package com.blaser.springcloud.controller;
 
 import com.blaser.springcloud.service.HystrixService;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -26,6 +27,13 @@ public class HystrixController {
     @RequestMapping("/hystrix/timeout/{id}")
     public String timeout(@PathVariable Integer id){
         String result = service.timeout(id);
+        log.info("--------->result: " + result);
+        return result;
+    }
+
+    @GetMapping("/hystrix/circuitBreaker/{id}")
+    public String CircuitBreaker(@PathVariable Long id){
+        String result = service.CircuitBreaker(id);
         log.info("--------->result: " + result);
         return result;
     }
