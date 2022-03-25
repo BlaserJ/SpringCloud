@@ -1,4 +1,0 @@
-com\blaser\springcloud\config\FeignConfig.class
-com\blaser\springcloud\ConsumerFeignOrder.class
-com\blaser\springcloud\service\FeignOrderService.class
-com\blaser\springcloud\controller\FeignController.class

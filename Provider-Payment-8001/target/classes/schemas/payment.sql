@@ -1,9 +1,0 @@
-USE database1;
-
-DROP TABLE IF EXISTS payment;
-
-CREATE TABLE payment (
-    id BIGINT(20) NOT NULL AUTO_INCREMENT comment 'id',
-    serial VARCHAR(200) DEFAULT NULL comment '串号',
-    PRIMARY KEY (id)
-)ENGINE = InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET = utf8;
