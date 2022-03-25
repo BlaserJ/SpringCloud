@@ -1,0 +1,3 @@
+com\blaser\springcloud\service\HystrixService.class
+com\blaser\springcloud\HystrixPayment8003.class
+com\blaser\springcloud\controller\HystrixController.class

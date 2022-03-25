@@ -1,0 +1,6 @@
+com\blaser\springcloud\config\BeanConfig.class
+com\blaser\springcloud\ConsumerOrder80.class
+com\blaser\springcloud\rule\Round.class
+com\blaser\springcloud\rule\impl\RoundRule.class
+com\blaser\ribbon\MyRule.class
+com\blaser\springcloud\controller\OrderController.class

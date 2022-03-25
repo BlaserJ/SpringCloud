@@ -1,0 +1,33 @@
+#端口
+server:
+  port: 8001
+
+#spring cloud微服务的名称
+spring:
+  application:
+    name: Provider-Payment-Service
+  #配置 Data Source
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource #数据源操作类型全限定名
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/Database1
+    username: root
+    password: root
+
+#配置MyBatis-plus
+#配置个屁，plus不需要配置
+
+#配置eureka server url
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      #单机模式
+      defaultZone: http://eureka1.com:7001/eureka
+      #集群模式
+      #defaultZone: http://eureka1.com:7001/eureka, http://eureka2.com:7002/eureka
+
+  instance:
+    instance-id: Payment-8001
+    prefer-ip-address: true

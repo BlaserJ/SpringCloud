@@ -1,0 +1,32 @@
+server:
+  port: 80
+
+spring:
+  application:
+    name: Consumer-Feign-Hystrix-Order
+eureka:
+  client:
+    register-with-eureka: false
+    service-url:
+      #单机模式
+      defaultZone: http://eureka1.com:7001/eureka
+      #集群模式
+      #defaultZone: http://eureka1.com:7001/eureka, http://eureka2.com:7002/eureka
+
+#配置Feign中自带的Ribbon
+ribbon:
+  #从运行方法到建立连接的超时时间
+  ConnectTimeout: 5000
+  #从建立连接到获取到资源的超时时间
+  ReadTimeout: 5000
+
+#配置Feign在控制台的针对指定接口的指定级别的日志输出
+logging:
+  level:
+    #格式： 接口全路径名: 日志级别
+    com.blaser.springcloud.service.FeignOrderService: debug
+
+#开启feign的hystrix功能
+feign:
+  hystrix:
+    enabled: true
