@@ -4,35 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="971d39af-8c83-49f1-bed8-835fc5e8b9db" name="变更" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/blase.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Consumer-Feign-Hystrix-Order-80/src/main/java/com/blaser/springcloud/service/fallback/FeignServiceFallBack.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Consumer-Hystrix-DashBoard-9001/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Consumer-Hystrix-DashBoard-9001/src/main/java/com/blaser/springcloud/HystrixDashboard9001.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Consumer-Hystrix-DashBoard-9001/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GateWay-9527/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GateWay-9527/src/main/java/com/blaser/springcloud/GateWay9527.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GateWay-9527/src/main/java/com/blaser/springcloud/config/GateWayConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GateWay-9527/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GateWay-9527/src/test/java/GatewayTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Consumer-Feign-Hystrix-Order-80/src/main/java/com/blaser/springcloud/controller/FHController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Consumer-Feign-Hystrix-Order-80/src/main/java/com/blaser/springcloud/controller/FHController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Consumer-Feign-Hystrix-Order-80/src/main/java/com/blaser/springcloud/service/FeignService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Consumer-Feign-Hystrix-Order-80/src/main/java/com/blaser/springcloud/service/FeignService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Eureka-Server-7001/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Eureka-Server-7001/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Eureka-Server-7002/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Eureka-Server-7002/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Provider-Hystrix-Payment-8003/src/main/java/com/blaser/springcloud/HystrixPayment8003.java" beforeDir="false" afterPath="$PROJECT_DIR$/Provider-Hystrix-Payment-8003/src/main/java/com/blaser/springcloud/HystrixPayment8003.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Provider-Hystrix-Payment-8003/src/main/java/com/blaser/springcloud/controller/HystrixController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Provider-Hystrix-Payment-8003/src/main/java/com/blaser/springcloud/controller/HystrixController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Provider-Hystrix-Payment-8003/src/main/java/com/blaser/springcloud/service/HystrixService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Provider-Hystrix-Payment-8003/src/main/java/com/blaser/springcloud/service/HystrixService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Provider-Payment-8001/src/main/java/com/blaser/springcloud/controller/PaymentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Provider-Payment-8001/src/main/java/com/blaser/springcloud/controller/PaymentController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Provider-Payment-8001/src/main/resources/schemas/payment.sql" beforeDir="false" afterPath="$PROJECT_DIR$/Provider-Payment-8001/src/main/resources/schemas/payment.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Provider-Payment-8002/src/main/java/com/blaser/springcloud/controller/PaymentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Provider-Payment-8002/src/main/java/com/blaser/springcloud/controller/PaymentController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringCloud.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    <list default="true" id="971d39af-8c83-49f1-bed8-835fc5e8b9db" name="变更" comment="Today's news: hystrix, gateway and windows cmd &quot;curl&quot; :)">
+      <change afterPath="$PROJECT_DIR$/GateWay-9527/src/main/java/com/blaser/springcloud/filter/MyGlobalFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,7 +65,7 @@
     <property name="project.structure.last.edited" value="模块" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.33103448" />
-    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+    <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
   </component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
@@ -249,8 +223,30 @@
       <workItem from="1648089984336" duration="23000" />
       <workItem from="1648092582681" duration="765000" />
       <workItem from="1648093912068" duration="13147000" />
-      <workItem from="1648173095063" duration="16883000" />
+      <workItem from="1648173095063" duration="21380000" />
     </task>
+    <task id="LOCAL-00001" summary="Today's news: hystrix, gateway and windows cmd &quot;curl&quot; :)">
+      <created>1648196857471</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1648196857471</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Today's news: hystrix, gateway and windows cmd &quot;curl&quot; :)">
+      <created>1648196894231</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1648196894231</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Today's news: hystrix, gateway and windows cmd &quot;curl&quot; :)">
+      <created>1648196951633</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1648196951633</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -269,6 +265,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Today's news: hystrix, gateway and windows cmd &quot;curl&quot; :)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Today's news: hystrix, gateway and windows cmd &quot;curl&quot; :)" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
